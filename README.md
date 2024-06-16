@@ -6,3 +6,4 @@
 	- {"type":"unsubscribe","product_ids":[<list of id's>]}
 - Config values MaxRows and RefreshRateMs controls how many maximum rows of data could be sent to the client and how frequently
 - Current impl communicates data in Text format (WebSocketMessageType.Text). Depending on the data type this could be optimized by compressing and sending as Binary
+- In a more formal application the client will go through proper authentication/authorization and will have the ability to create custom subscription profiles with selected tickers and subscribe by those profiles for ticking data instead of selecting/unselecting individual tickers each time for subscription
